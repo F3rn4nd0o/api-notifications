@@ -1,4 +1,4 @@
-import { Replace } from 'src/utils/Replace';
+import { Replace } from '@core/logic/Replace';
 import { Content } from './content';
 import { randomUUID } from 'crypto';
 
@@ -58,7 +58,7 @@ export class Notification {
     return this.props.readAt;
   }
 
-  public get createdAt(): string {
-    return this.props.category;
+  public get createdAt(): Date {
+    return this.props.createdAt;
   }
 }
